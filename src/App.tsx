@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Container from '@mui/material/Container';
+import { Pages } from './common/utils';
+import { HomePage, FeedbackPage, FeedbackSubmittedPage } from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth='sm'>
+      <Router basename={Pages.Home}>
+        <Routes>
+          <Route path={Pages.Feedback} element={<FeedbackPage />} />
+          <Route path={Pages.Feedback_Submitted} element={<FeedbackSubmittedPage />} />
+          <Route path={Pages.Home} element={<HomePage />} />
+        </Routes>
+      </Router>
+    </Container>
   );
 }
 
