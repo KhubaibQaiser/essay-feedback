@@ -9,7 +9,7 @@ const EssayRatings: React.VFC = () => {
 
   const [ratingState, setRatingState] = React.useState<RatingStateType>('not-rated');
   const [ratings, setRatings] = React.useState<iRating[]>([
-    { name: 'essay', title: 'Essay correctness', value: 0 },
+    { name: 'essay', title: 'Essay Correctness', value: 0 },
     { name: 'ux', title: 'User Experience', value: 0 },
   ]);
 
