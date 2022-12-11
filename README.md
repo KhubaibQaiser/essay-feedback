@@ -51,6 +51,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - Can implement an API to GET the essay data - having a certain `id`. Probably using `react-query` or `useSWR` from `swr` package for better caching.
 - Can implement an API to POST the user feedback against an essay `id`.
 - The UI can be improve. Can make the `Ratings` component sticky, compact when user scrolls down.
+- Change relative imports to absolute imports.
 
 ## Feedback Component
 
