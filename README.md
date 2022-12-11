@@ -50,4 +50,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - Can implement the functionality for the `useTracker` hook to actually track different events. Right now, it's mocked.
 - Can implement an API to GET the essay data - having a certain `id`. Probably using `react-query` or `useSWR` from `swr` package for better caching.
 - Can implement an API to POST the user feedback against an essay `id`.
-- The UI can be improve, obviously.
+- The UI can be improve. Can make the `Ratings` component sticky, compact when user scrolls down.
+
+## Feedback Component
+
+- Unrated
+  ![unrated](https://i.postimg.cc/05Z8Hs0G/ratings-unrated.png)
+- Rated
+  ![rated](https://i.postimg.cc/0Q08vRRs/ratings-rated.png)
+- Reviewed
+  ![reviewed](https://i.postimg.cc/j28tWHS3/ratings-reviewed.png)
